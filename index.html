@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel World Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="blocker">
+        <h1 id="titleText">Loading Terrain...</h1>
+        <p id="subText">Please wait a moment</p>
+    </div>
+    
+    <div id="crosshair"></div>
+    <div id="water-overlay"></div>
+    <div id="ui">FPS: 0<br>Chunks: 0<br>Speed: 7 b/s</div>
+
+    <div id="hotbar">
+        <div class="slot active" data-slot="0"><span class="key">1</span>Wood</div>
+        <div class="slot" data-slot="1"><span class="key">2</span>Stone</div>
+        <div class="slot" data-slot="2"><span class="key">3</span>Sand</div>
+        <div class="slot" data-slot="3"><span class="key">4</span>Dirt</div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
